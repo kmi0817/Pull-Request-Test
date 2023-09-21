@@ -12,7 +12,5 @@ const returnBook = (currentBooks, title) => {
 }
 
 const leftBooks = borrowBook("The Maze Runner");
-console.log(leftBooks);
 
 const leftBooks2 = returnBook(leftBooks, "The Maze Runner");
-console.log(leftBooks2);
