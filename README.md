@@ -88,6 +88,9 @@ git push origin feature2
 Pull Request 작성 (into main from feature2) → Merge X
 
 ### 3. feature3 작업 & PR (Not Not merged) => `draft 상태로 전환`
+
+![image](https://github.com/kmi0817/Pull-Request-Test/assets/62174395/929f7e61-2624-4346-9065-edc91656b0ca)
+
 ```bash
 git switch main
 git switch -c feature3
@@ -148,6 +151,7 @@ feature2에서 날린 `c2: 책 대출 함수 생성 및 사용` PR이 Merge 됐�
 ... 근데 feature2에서 작업한 commit 기록(c2)까지 남아 있다. 다른 방법이 없을까?
 
 ### 5. feature4 작업 & PR
+![image](https://github.com/kmi0817/Pull-Request-Test/assets/62174395/6cf522ae-5c4c-484f-9545-fce2211cc544)
 
 feature2가 Merge 됐고, feature3은 아직 Merge되지 않은 상황이다. 이번에는 `main`에서 switch하지 말고, `feature3`에서 switch -c로 `feature4` 브랜치를 생성하자.
 
@@ -223,11 +227,11 @@ commit은 `변경` 기록을 담는 것이다. 가장 최신 commit 기록과 �
 
 아직 Merge 되지 않은 feature2에서 새 브랜치 feature3을 만들든,
 
-![image](https://github.com/kmi0817/Pull-Request-Test/assets/62174395/d9048356-1655-40a0-bdd3-f925b81acac7)
+![image](https://github.com/kmi0817/Pull-Request-Test/assets/62174395/bdb51773-8382-44fa-829f-0d089fd85307)
 
 아직 Merge 되지 않은 feature2가 만들어진 feature1에서 새 브랜치 feature3을 만들어 feature2로 rebase를 하든,
 
-![image](https://github.com/kmi0817/Pull-Request-Test/assets/62174395/25024a73-5927-4752-ae86-77a56c500b85)
+![image](https://github.com/kmi0817/Pull-Request-Test/assets/62174395/929f7e61-2624-4346-9065-edc91656b0ca)
 
 feature3을 PR 올리면 아직 Merge되지 않은 feature2의 commit 기록들까지 함께 올라간다.
 나중에 feature2 PR이 Merge 되더라도, feature3 PR에 올라갔던 feature2 commit 기록들은 사라지지 않는다.
